@@ -14,3 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
           let h4 = document.createElement("h4");
           let a = document.createElement("a");
           let profile = document.createTextNode("View Profile");
+
+          img
