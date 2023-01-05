@@ -7,18 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((res) => res.json())
       .then((data) => {
         data.items.forEach((user) => {
-          let ul = document.getElementById("user-list");
-          let li = document.createElement("li");
-          let img = document.createElement("img");
-          let h5 = document.createElement("h5");
-          let h4 = document.createElement("h4");
-          let a = document.createElement("a");
+          let ul = document.getElementById("user-list");//It gets an element by id user-list
+          let li = document.createElement("li");//will create a li element
+          let img = document.createElement("img");// create img element
+          let h5 = document.createElement("h5");// create h5 element
+          let h4 = document.createElement("h4");// creates h4 element
+
+          let a = document.createElement("a");// creates an a element
           let profile = document.createTextNode("View Profile");
 
           img.src = user.avatar_url;
           h4.innerText = user.login;
           a.href = user.html_url;
-          h5.innerHTML = `${user.login}'s Repositories`;
+          h5.innerHTML = `${user.login}'s Repositories`; // this shows the different users repositories
 
           a.appendChild(profile);
           li.appendChild(img);
