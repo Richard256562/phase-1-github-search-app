@@ -16,3 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
           let profile = document.createTextNode("View Profile");
 
           img.src = user.avatar_url;
+          h4.innerText = user.login;
+          a.href = user.html_url;
+          h5.innerHTML = `${user.login}'s Repositories`;
+
+          a.appendChild(profile);
+          li.appendChild(img);
+          li.appendChild(h4);
+          li.appendChild(a);
+          li.appendChild(h5);
+          ul.appendChild(li);
+        });
+      });
+  },{once: true});
+});
