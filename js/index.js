@@ -15,4 +15,4 @@ document.addEventListener("DOMContentLoaded", () => {
           let a = document.createElement("a");
           let profile = document.createTextNode("View Profile");
 
-          img
+          img.src = user.avatar_url;
